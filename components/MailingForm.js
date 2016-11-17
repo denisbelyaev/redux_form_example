@@ -3,6 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import renderInput from './RenderInput';
 import validateContact from './validateContact';
 import asyncValidate from './asyncValidate';
+import {updateUser} from '../actions/actionForm';
 
 class ContactForm extends Component {
     constructor() {
@@ -13,7 +14,9 @@ class ContactForm extends Component {
     }
 
     mySubmit() {
-        this.refs.myform.submit();
+        //console.log(this.props);
+        //this.refs.myform.submit();
+        this.props.dispatch(updateUser('21'));
     }
 
     formSubmit(values, dispatch) {

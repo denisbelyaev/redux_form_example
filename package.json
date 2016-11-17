@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "flux-standard-action": "^1.0.0",
+    "koa": "^1.2.4",
     "path": "^0.12.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
